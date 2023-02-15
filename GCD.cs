@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AlgorithmsAndDataStructures
 {
-    public class Program
+    internal class GCD : IExecutable
     {
-        private static void Main()
+        public void Execute()
         {
             string[] inputs = Console.ReadLine().Split();
             int x = int.Parse(inputs[0]);
@@ -12,7 +16,7 @@ namespace AlgorithmsAndDataStructures
             Console.WriteLine(CalcGCD(x, y));
         }
 
-        private static int CalcGCD(int x, int y)
+        private int CalcGCD(int x, int y)
         {
             if (x < y)
             {
@@ -26,3 +30,4 @@ namespace AlgorithmsAndDataStructures
         }
     }
 }
+
